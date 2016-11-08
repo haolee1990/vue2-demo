@@ -17,10 +17,10 @@ var server = new WebpackDevServer(compiler, {
     }
 })
 
-server.listen(3000, (err) => {
+server.listen(config.port, (err) => {
     if (err) {
         console.log(err)
         return
     }
-    console.log('http://localhost:3000' + config.publicPath)
+    console.log('http://localhost:'+ config.port + config.publicPath)
 })

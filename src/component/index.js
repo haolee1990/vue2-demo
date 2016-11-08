@@ -1,2 +1,2 @@
-import header from './header'
+import header from './common/header'
 export default { header }
